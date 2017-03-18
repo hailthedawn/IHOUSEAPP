@@ -3,6 +3,7 @@ package com.example.ketaki.ihouseapp;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.support.annotation.NonNull;
 import android.support.design.widget.Snackbar;
@@ -61,6 +62,21 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
     private EditText mPasswordView;
     private View mProgressView;
     private View mLoginFormView;
+
+
+    public void onButtonClick(View v) {
+        if(v.getId()==R.id.bSignIn) {
+            //TODO add nesting- if username+password is blank/wrong, display a "Invalid username" thing. else, do:
+
+            //if the sign in button is clicked, launches MainActivitypage
+            //EditText emailid=(EditText)findViewById(R.id.email);
+            //String email=emailid.getText().toString();
+
+            Intent mainpageLaunch=new Intent(this,MainActivitypage.class);
+           // mainpageLaunch.putExtra("Email",email); //this works bc "Email" is hashed to email. get it by getIntent().getStringExtra("Email") in the launched Activity class
+            startActivity(mainpageLaunch);
+        }
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

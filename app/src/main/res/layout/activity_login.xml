@@ -23,7 +23,7 @@
             android:id="@+id/imageView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/I_house_logo_xml_" />
+            app:srcCompat="@drawable/i_house_logo_xml_" />
     </ScrollView>
 
     <LinearLayout
@@ -44,7 +44,7 @@
                 android:inputType="textEmailAddress"
                 android:maxLines="1"
                 android:background="#FFFFFF"
-                android:singleLine="true" />
+                 />
 
         </android.support.design.widget.TextInputLayout>
 
@@ -68,7 +68,7 @@
         </android.support.design.widget.TextInputLayout>
 
         <Button
-            android:id="@+id/email_sign_in_button"
+            android:id="@+id/bSignIn"
             style="@android:style/Widget.Material.Button.Colored"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -76,7 +76,8 @@
             android:background="#ffffff"
             android:text="@string/action_sign_in"
             android:textColor="#4b92db"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            tools:targetApi="" />
 
     </LinearLayout>
 
